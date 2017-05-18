@@ -13,11 +13,13 @@ public class Compradores extends Usuarios{
      private String coleccion;
     private String obra_interesada;
 
-    public Compradores(String coleccion, String obra_interesada, String nombre, String apellido) {
-      
-        this.coleccion = coleccion;
-        this.obra_interesada = obra_interesada;
+    public Compradores(String nombre, String apellido) {
+        super(nombre, apellido);
+        this.coleccion=coleccion;
+        this.obra_interesada=obra_interesada;
     }
+
+  
 
     public String getColeccion() {
         return coleccion;
